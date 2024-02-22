@@ -618,7 +618,7 @@ custom_config_menu() {
         echo "Please choose one of these options:"
         echo "1. Vmess TCP http header"
         echo "2. Trojan/Vless/Vmess WS TLS"
-        echo "3. VLESS TCP REALITY"
+        echo "3. VLESS TCP/GRPC REALITY"
         echo "4. Back to the main menu"
         echo
         read -p "Enter your desired option (1,2..): " option_custom_config_menu
@@ -823,6 +823,7 @@ reality_tcp_insert(){
 listen_reality_tcp="127.0.0.3"
 reality_tcp_port=$(generateRandomPort)
 read -p "Please enter the config SNI's : (seprate them with , ) " reality_tcp_sni_comma
+read -p "slect and enter transmission : ( tcp / grpc ) " transmission_reality
 reality_tcp_sni=$(echo $reality_tcp_sni_comma | tr ',' ' ')
 
     echo "
@@ -832,6 +833,7 @@ use_backend reality_tcp_backend_${reality_tcp_port} if reality_tcp_${reality_tcp
 #reality_tcp_front_${reality_tcp_port}_end
 " >> $directory_path/reality_tcp_front.tmp
 
+if [ "$transmission_reality" == "tcp" ] ; then
     echo "
 #reality_tcp_backend_${reality_tcp_port}_start
 backend reality_tcp_backend_${reality_tcp_port}
@@ -839,6 +841,16 @@ backend reality_tcp_backend_${reality_tcp_port}
     server reality_tcp_backend_${reality_tcp_port} ${listen_reality_tcp}:${reality_tcp_port} send-proxy-v2 
 #reality_tcp_backend_${reality_tcp_port}_end
 " >> $directory_path/reality_tcp_backend.tmp
+else
+    echo "
+#reality_tcp_backend_${reality_tcp_port}_start
+backend reality_tcp_backend_${reality_tcp_port}
+    mode tcp
+    server reality_tcp_backend_${reality_tcp_port} ${listen_reality_tcp}:${reality_tcp_port}
+#reality_tcp_backend_${reality_tcp_port}_end
+" >> $directory_path/reality_tcp_backend.tmp
+fi
+
 
 
 front_file_reality_tcp="${directory_path}/reality_tcp_front.tmp"
@@ -872,7 +884,6 @@ clear
 echo "${YELLOW}---------------------------------- Vless Reality -----------------------------------------${RESET}"
 
 echo "Congratulations! It was successful. You can use this information to make your configuration."
-echo "  Port : ${reality_tcp_port}"
 echo "  Listen IP : ${listen_reality_tcp} "
 echo "  Port : ${reality_tcp_port}"
 echo "  ServerNames: ${reality_tcp_sni_comma}"
@@ -1476,7 +1487,7 @@ while true; do
                  while true; do
                 echo ""
                 echo "  ${RED}Select an option:${RESET}"
-                echo "      1. ${GREEN}ADD Inbound${RESET} "
+                echo "      1. ${GREEN}Add Inbound${RESET} "
                 echo "      2. ${RED}Delete Inbound ${RESET}"
                 echo "      3. Back to main menu"
                 echo ""
