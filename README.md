@@ -2,14 +2,16 @@
 
 <p align="center"><img src="/logo.png" alt="project-image"></p>
 
-<p id="description">Hide the X-UI Panel (Alireza - MHSanaei ) with Worpress ! Everything on a single port!</p>
+<p align="center" id="description">Hide the X-UI Panel (Alireza - MHSanaei ) with Worpress ! Everything on a single port!</p>
 
 <p align="center"><img src="https://img.shields.io/badge/MHSanaei%20XUI%20Pannel-34d399" alt="shields">      <img src="https://img.shields.io/badge/Alireza0%20XUI%20Pannel-8A2BE2" alt="shields"></p>
 
   
   
 <h2>🧐 Features</h2>
-
+<br>
+<p align="center"><img src="/sc.JPG" alt="project-image"></p>
+<br>
 <p style="direction:rtl ; text-align:right">
 ✅مخفی سازی پنل xui به کمک مسیر خاص در پشت سایت وردپرسی
 <p style="direction:rtl ; text-align:right">
