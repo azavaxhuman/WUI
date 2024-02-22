@@ -1,10 +1,10 @@
 <h1 align="center" id="title">WUI (WordPress + XUI Panel)</h1>
 
-<p align="center"><img src="https://raw.githubusercontent.com/azavaxhuman/WUI/main/Frame%2030.png?token=GHSAT0AAAAAACEEXGLSZEXXSBYEW6K734JCZOXH6PQ" alt="project-image"></p>
+<p align="center"><img src="/logo.png" alt="project-image"></p>
 
 <p id="description">Hide the X-UI Panel (Alireza - MHSanaei ) with Worpress ! Everything on a single port!</p>
 
-<p align="center"><img src="https://img.shields.io/badge/MHSanaei%20XUI%20Pannel-34d399" alt="shields"><img src="https://img.shields.io/badge/Alireza0%20XUI%20Pannel-8A2BE2" alt="shields"></p>
+<p align="center"><img src="https://img.shields.io/badge/MHSanaei%20XUI%20Pannel-34d399" alt="shields">      <img src="https://img.shields.io/badge/Alireza0%20XUI%20Pannel-8A2BE2" alt="shields"></p>
 
   
   
@@ -48,7 +48,7 @@ git clone https://github.com/azavaxhuman/WUI.git /root/wui-dds && chmod +x /root
 wui-dds
 ```
 <br><br>
-<h2>🍰 Contribution Guidelines:</h2>
+<h2>🍰 Guidelines:</h2>
 <p style="direction:rtl ; text-align:right">
 ❔ این اسکریپت در دو حالت نصب میشه :
 <p style="direction:rtl ; text-align:right">
