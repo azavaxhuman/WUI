@@ -34,7 +34,7 @@ VMESS TCP http (header)
 
 VMESS / VLESS / TROJAN WS TLS
 
-VLESS TCP REALITY
+VLESS TCP/GRPC REALITY
 <p style="direction:rtl ; text-align:right">
 ✅ دریافت خودکار سرتفیکیت برای وردپرس  و پنل 
 <p style="direction:rtl ; text-align:right">
