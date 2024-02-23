@@ -64,10 +64,13 @@ wui-dds
  2. نصب خودکار در این حالت شما یک سرور خام دارین و فقط نیاز به یک  دامنه دارین! اسکریپت همه ی کارهارو برای شما انجام میده . نسخه ی مورد نظر شما (سنایی/علیرضا) نصب میشه ، سرتفیکیت ها گرفته میشه و یک سایت وردپرسی به همراه یک پنل xui مخفی به شما تحویل میشه !
 
 
-<h2>🎈 YOUTUBE </h2>
+<h2>🎈 ویدئو آموزشی </h2>
 
-You Can find my Videos on Daily Digital Skills Channel . See [YouTube](https://www.youtube.com/@Dailydigitalskills/) for more information.
+You Can find my Videos on Daily Digital Skills Channel . See [YouTube](https://youtu.be/OksLefIcUxc) for more information.
+<br>
+<p style="direction:rtl ; text-align:right">
+مشاهده ویدئو آموزشی برای حالت دوم ( سرور خام - نصب اتوماتیک پنل دلخواه + وردپرس ) (https://youtu.be/OksLefIcUxc)
+  <br>
 
-## Authors
-
+<h2>🎈 Authors </h2>
 * **AzavaxHuman** - *Daily Digital Skills* - [AzavaxHuman](https://github.com/azavaxhuman) 
